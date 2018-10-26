@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StockDiary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main">StockDiary</string>
+    <string name="stock_sh_name">上证指数</string>
+    <string name="stock_sz_name">深证成指</string>
+    <string name="stock_chuang_name">创业板指</string>
+    <string name="menu_save">保存</string>
+    <string name="title_activity_diary_show">DiaryShowActivity</string>
+</resources>
