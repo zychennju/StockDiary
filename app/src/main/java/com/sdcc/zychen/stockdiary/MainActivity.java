@@ -115,8 +115,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
+
         // Set current date to today
-        setCurrentDate(new Date());
+        Date date = new Date();
+        setSubtitle(dateFormat.format(date));
+        if (compactCalendarView != null) {
+            compactCalendarView.setCurrentDate(date);
+        }
 
         final ImageView arrow = findViewById(R.id.date_picker_arrow);
 
@@ -222,13 +227,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 continue;
             }
-        }
-    }
-
-    private void setCurrentDate(Date date) {
-        setSubtitle(dateFormat.format(date));
-        if (compactCalendarView != null) {
-            compactCalendarView.setCurrentDate(date);
         }
     }
 

@@ -45,29 +45,38 @@
                 android:id="@+id/text_diary_content"
                 android:textSize="20dp"
                 android:textStyle="bold"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_item_attr"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="5dp"
-                    android:id="@+id/img_diary_time"
-                    android:scaleType="centerCrop"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/ic_time"/>
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/img_diary_time"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_time"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_diary_time"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/text_diary_time"/>
-            </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/text_diary_indexsh"
-                android:text="14:00 SH:2700.84"/>
+                    android:id="@+id/text_diary_indexsh"
+                    android:layout_alignParentLeft="true"
+                    android:text="14:00 SH:2700.84"/>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
